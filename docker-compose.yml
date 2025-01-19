@@ -8,6 +8,49 @@ services:
     environment:
       POSTGRES_USER: course-work
       POSTGRES_PASSWORD: course-work
-      POSTGRES_DB: course-work-oltp
+      POSTGRES_DB: course-work
     volumes:
       - ./db:/var/lib/postgresql/data
+      - ./oltp:/oltp
+      - ./olap:/olap
+    networks:
+      - course-work-network
+
+  oltp_migrate:
+    image: postgres:latest
+    container_name: oltp_migrate
+    depends_on:
+      - db
+    entrypoint: bash /oltp/populate_data.sh
+    environment:
+      POSTGRES_USER: course-work
+      POSTGRES_PASSWORD: course-work
+      POSTGRES_DB: course-work
+      POSTGRES_HOST: db
+      POSTGRES_PORT: 5432
+    networks:
+      - course-work-network
+    volumes:
+      - ./oltp:/oltp
+
+  olap_migrate:
+    image: postgres:latest
+    container_name: olap_migrate
+    depends_on:
+      - db
+      - oltp_migrate
+    entrypoint: bash /olap/migrate_oltp_to_olap.sh
+    environment:
+      POSTGRES_USER: course-work
+      POSTGRES_PASSWORD: course-work
+      POSTGRES_DB: course-work
+      POSTGRES_HOST: db
+      POSTGRES_PORT: 5432
+    networks:
+      - course-work-network
+    volumes:
+      - ./olap:/olap
+
+networks:
+  course-work-network:
+    driver: bridge

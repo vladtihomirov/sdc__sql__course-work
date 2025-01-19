@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="course-work-oltp@localhost" uuid="3b0de734-6912-4c5e-979c-a3941353bd3e">
+    <data-source source="LOCAL" name="course-work@localhost [2]" uuid="b26ed464-7f72-44e5-a95f-bb95ff955008">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5444/course-work-oltp</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5444/course-work</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

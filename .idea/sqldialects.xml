@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/olap/insights/airline-income.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/olap/insights/monthly-income.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/olap/insights/quater-income.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/olap/insights/top-10-popular-airports.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/olap/insights/top-10-popular-flights.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/olap/sql/migrate.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/oltp/insights/airline-income.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/oltp/insights/monthly-income.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/oltp/insights/quater-income.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/oltp/insights/top-10-popular-airports.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/oltp/insights/top-10-popular-flights.sql" dialect="PostgreSQL" />
+  </component>
+</project>
