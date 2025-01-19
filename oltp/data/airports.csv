@@ -1,0 +1,21 @@
+airport_code,airport_name,city,country
+JFK,John F. Kennedy International Airport,New York,USA
+LHR,Heathrow Airport,London,UK
+CDG,Charles de Gaulle Airport,Paris,France
+HND,Haneda Airport,Tokyo,Japan
+LAX,Los Angeles International Airport,Los Angeles,USA
+DXB,Dubai International Airport,Dubai,UAE
+SIN,Singapore Changi Airport,Singapore,Singapore
+IST,Istanbul Airport,Istanbul,Turkey
+SYD,Sydney Kingsford Smith Airport,Sydney,Australia
+MIA,Miami International Airport,Miami,USA
+ORD,Chicago O'Hare International Airport,Chicago,USA
+ATL,Hartsfield–Jackson Atlanta International Airport,Atlanta,USA
+HKG,Hong Kong International Airport,Hong Kong,China
+NRT,Narita International Airport,Tokyo,Japan
+ICN,Incheon International Airport,Seoul,South Korea
+BOM,Chhatrapati Shivaji Maharaj International Airport,Mumbai,India
+DEL,Indira Gandhi International Airport,Delhi,India
+CPT,Cape Town International Airport,Cape Town,South Africa
+GRU,São Paulo/Guarulhos International Airport,São Paulo,Brazil
+YYZ,Toronto Pearson International Airport,Toronto,Canada
