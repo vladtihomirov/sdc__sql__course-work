@@ -8,6 +8,7 @@
 
 **OLTP schema**:
 ![OLTP Schema](oltp/docs/oltp.png)
+https://drawsql.app/teams/ehu-it-hub/diagrams/course-work-oltp
 
 ### 1.2. Prepare data to load to your OLTP database – 2 datasets
 *2 datasets*
@@ -41,3 +42,29 @@ ON CONFLICT (...) DO NOTHING;
 
 **OLAP schema**:
 ![OLAP Schema](olap/docs/olap.png)
+
+https://drawsql.app/teams/ehu-it-hub/diagrams/course-work-olap
+
+### 2.2 Develop ETL process to move data from OLTP database to OLAP database
+*Check which OLTP data were already uploaded and add only new ones, made transformations if needed, save data to DWH*
+
+#### How to init DB and import CSV files:
+1. If you have not done steps from 1.3, please do it
+2. Run OLTP init and migrate from CSV script: `docker-compose up olap_migrate`
+
+This script is re-runnable, and it extracts, transforms and loads to OLAP DB from OLTP DB by SQL script that is located in `olap/sql/migrate.sql`
+Before any script you can find what and how is updating and sometimes business logic why.
+
+### 2.3 Create visual report based on your OLAP solution
+*create meaningful Power BI report answering analytical questions*
+
+**I have not made it*
+
+### 3. Prepare queries based on OLTP and OLAP DBs to get insights
+
+You can find out insights for OLTP and OLAP dbs in folders:
+- `olap/insights`
+- `oltp/insights`
+
+
+## Thank you for the course and I hope you won't face issues while checking my course work!🙃
